@@ -83,4 +83,5 @@ como comente con anterioridad seguire subiendo contenido a esta rama con las act
 Sin storybook por el momento
 
 ## Mejoras después de la primera entrega
-- Centrado/responsive card formulario agreagr libros
+- Centrado/responsive card formulario agreagar libros
+- Validacion formulario agreagar libros(obligatorios: titulo y autor)
