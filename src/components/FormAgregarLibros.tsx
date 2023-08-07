@@ -14,6 +14,7 @@ export const FormAgregarLibros = () => {
   });
 
   return (
+    <div className='flex justify-center items-center mt-5'>
 <div className="w-full max-w-xs box"> 
   <form className="container bg-white shadow-md shadow-gray-300 shadow-box-personal rounded px-8 pt-6 pb-8 mb-4">
     <div className="md:flex md:items-center mb-6">
@@ -71,8 +72,7 @@ export const FormAgregarLibros = () => {
       </button>
     </div>
   </form>
-
-
+    </div>
     </div>
   );
 }

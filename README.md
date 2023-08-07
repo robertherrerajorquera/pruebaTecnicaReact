@@ -81,3 +81,6 @@ como comente con anterioridad seguire subiendo contenido a esta rama con las act
 ## storybook
 
 Sin storybook por el momento
+
+## Mejoras después de la primera entrega
+- Centrado/responsive card formulario agreagr libros
