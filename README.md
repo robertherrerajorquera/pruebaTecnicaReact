@@ -85,3 +85,4 @@ Sin storybook por el momento
 ## Mejoras después de la primera entrega
 - Centrado/responsive card formulario agreagar libros
 - Validacion formulario agreagar libros(obligatorios: titulo y autor)
+- Use Context y reducer creado, falta aplicar reducer...
