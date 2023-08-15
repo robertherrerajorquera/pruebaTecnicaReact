@@ -8,8 +8,6 @@ import { ListaAcciones } from "../components/ListaAcciones";
 export const Favoritos = () => {
   const data = useContext(BooksContext);
 
-  console.log(typeof data);
-
   return (
     <div className="flex justify-center">
   

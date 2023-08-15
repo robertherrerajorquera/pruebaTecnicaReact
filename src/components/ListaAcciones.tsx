@@ -20,7 +20,6 @@ export const ListaAcciones = () => {
     });
     const  ctx  = useContext(BooksContext);
     const { favoritosAction } = ctx;
-    console.log("favoritos state",ctx);
 
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
