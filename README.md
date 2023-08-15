@@ -88,3 +88,4 @@ Sin storybook por el momento
 - Use Context y reducer creado, falta aplicar reducer...
 - Use Context y reducer funcionando, falta solucionar any's de reducer
 - Use Context y reducer solucion any type
+- revert useContext y reducelr solucion any

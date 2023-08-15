@@ -1,17 +1,5 @@
-//import { Action } from "./Actions";
-import { Books} from "../components/models/books";
 
-// interface Action {
-//     type: string;
-//     payload: string;
-//   }
- type BooksAction = 
- | { type: 'AGREGAR_FAVORITOS'; payload: Books};
-type State = {
-    books: [];
-}
-
-export const Reducer = (state: State, action: BooksAction) => {
+export const Reducer = (state, action) => {
   console.log("info reducer",state)
   console.log("action reducer",action)
  switch (action.type) {
