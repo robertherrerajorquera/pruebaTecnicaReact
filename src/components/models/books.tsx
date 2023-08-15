@@ -2,14 +2,14 @@ export interface Books  {
     url: string;
     name: string;
     isbn: string,
-    authors: [];
+    authors: string[];
     numberOfPages: string;
     publisher: string;
     country:string;
     mediaType:string;
     released: string;
-    characters: Characters;
-    povCharacters: povCharacters;
+    characters: Characters[];
+    povCharacters: povCharacters[];
 }
 
 interface Characters{
@@ -17,4 +17,8 @@ interface Characters{
 }
 interface povCharacters{
     povCharacter: string[];
+}
+export interface BooksState {
+    books: Books[];
+    action: [];
 }

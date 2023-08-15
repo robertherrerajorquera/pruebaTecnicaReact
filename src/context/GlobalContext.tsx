@@ -1,43 +1,78 @@
-import { createContext, ReactNode, useReducer, FC } from "react";
-import {Reducer} from "./Reducer";
+import { useReducer, FC } from "react";
+import { Reducer } from "./Reducer";
+import { BooksContext } from "./BooksContext";
+//import { Books } from "../components/models/books";
+
 
 type Props = {
-  children?: ReactNode,
-
+  //children?: ReactNode,
+  children: JSX.Element | JSX.Element[]
   // any props that come into the component
 }
 
-const initialState = {
-  favoritos: [
-    {
-      name: "A Game of Thrones",
-      author: "George R. R. Martin",
-      type: "Hardcover"
-    },
-    {
-      name: "A Clash of Kings",
-      author: "George R. R. Martin",
-      type: "Hardback"
-    },
-    {
-      name: "A Storm of Swords",
-      author: "George R. R. Martin",
-      type: "Hardcover"
-    },
-  ],
+export const initialState = {
+  books: [ {
+    url: "",
+    name: "A Game of Thrones",
+    isbn: "",
+    authors: ["George R. R. Martin"],
+    numberOfPages: "",
+    publisher: "",
+    country:"",
+    mediaType:"Hardcover",
+    released: "",
+    characters: [],
+    povCharacters: [],
+  },
+  {
+    url: "",	
+    name: "A Clash of Kings",
+    isbn: "",
+    authors: ["George R. R. Martin"],
+    numberOfPages: "",
+    publisher: "",
+    country:"",
+    mediaType:"Hardback",
+    released: "",
+    characters: [],
+    povCharacters: [],
+  },
+  {
+    url: "",	
+    name: "A Storm of Swords",
+    isbn: "",
+    authors: ["George R. R. Martin"],
+    numberOfPages: "",
+    publisher: "",
+    country:"",
+    mediaType:"Hardcover",
+    released: "",
+    characters: [],
+    povCharacters: [],
+  },]
 };
 
-
-
-export const GlobalContext = createContext(initialState);
+//export const GlobalContext = createContext<BooksState>({} as BooksState);
+//export const GlobalContext = createContext();
 export const ContextProvider: FC<Props>= ({ children }) => {
-
-
   const [state, dispatch] = useReducer(Reducer, initialState);
 
+
+  const addUser = (data:object) => {
+    try {
+      console.log("lista de favoritos", data);
+      dispatch({
+        type: "AGREGAR_FAVORITOS",
+        payload:  data
+      });
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
   return (
-    <GlobalContext.Provider value={{ ...state, dispatch }}>
+    <BooksContext.Provider value={{favoritosState: state, favoritosAction: addUser}}>
       {children}
-    </GlobalContext.Provider>
+    </BooksContext.Provider>
   );
 }

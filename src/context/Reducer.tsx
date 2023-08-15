@@ -1,22 +1,20 @@
 //import { Action } from "./Actions";
-export type Favorito = {
-    name: string
-    author: string
-    type: string
-}
+//import {BooksState, Books} from "../components/models/books";
 
-interface Action {
-    type: string;
-    payload: string;
-  }
+// interface Action {
+//     type: string;
+//     payload: string;
+//   }
+// type BooksAction = 
+// | { type: 'AGREGAR_FAVORITOS'; payload: Books};
 
-export const Reducer = (state, action:Action) => {
-  console.log(action)
+export const Reducer = (state, action) => {
+ // console.log(action)
  switch (action.type) {
-     case "ADD_FAV":{
+     case "AGREGAR_FAVORITOS":{
          return {
           ...state, 
-          favorito: [...state ,action.payload]
+          books: [...state.books , action.payload]
          };
         }
  }
