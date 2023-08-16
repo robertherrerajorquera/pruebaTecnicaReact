@@ -87,3 +87,4 @@ Sin storybook por el momento
 - Validacion formulario agreagar libros(obligatorios: titulo y autor)
 - Use Context y reducer creado, falta aplicar reducer...
 - Use Context y reducer funcionando, falta solucionar any's de reducer
+- Creacion de modal con headlesUI falta signar cerrado al completar formulario
