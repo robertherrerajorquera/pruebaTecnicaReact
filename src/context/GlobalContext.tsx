@@ -1,6 +1,7 @@
 import { useReducer, FC } from "react";
 import { Reducer } from "./Reducer";
 import { BooksContext } from "./BooksContext";
+
 //import { Books } from "../components/models/books";
 
 
@@ -10,7 +11,8 @@ type Props = {
   // any props that come into the component
 }
 
-export const initialState = {
+
+export const INITIAL_STATE = {
   books: [ {
     url: "",
     name: "A Game of Thrones",
@@ -55,12 +57,12 @@ export const initialState = {
 //export const GlobalContext = createContext<BooksState>({} as BooksState);
 //export const GlobalContext = createContext();
 export const ContextProvider: FC<Props>= ({ children }) => {
-  const [state, dispatch] = useReducer(Reducer, initialState);
+  const [state, dispatch] = useReducer(Reducer, INITIAL_STATE);
 
 
   const addUser = (data:object) => {
     try {
-      console.log("lista de favoritos", data);
+     // console.log("lista de favoritos", data);
       dispatch({
         type: "AGREGAR_FAVORITOS",
         payload:  data

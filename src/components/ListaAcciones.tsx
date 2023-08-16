@@ -32,10 +32,10 @@ export const ListaAcciones = () => {
     }
     return (
         <div className="flex justify-center items-center">
-            <div className="container text-black bg-white shadow-md shadow-gray-300 rounded px-8 pt-6 pb-8 mb-4">
-            <h4>Lista Acciones</h4>
+            <div className="container text-black bg-white px-8 pt-6 pb-8 mb-4">
+
                 <form onSubmit={handleSubmit} >
-                    <h2>Agrega libro a tus favoritos</h2>
+                   
                     <div className="mb-5">
                         <input type="text" onChange={handleChange} name="name" placeholder="Titulo del libro" className=" focus:outline-none focus:text-black-100 w-full" />
                     </div>
