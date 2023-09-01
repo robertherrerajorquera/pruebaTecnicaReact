@@ -28,17 +28,17 @@ If you are developing a production application, we recommend updating the config
 
 ## Informacion a destacar y cosas pendientes
 
-- Por temas de tiempo y motivos personales no se alcanzo a realizar todos los puntos funcionales
+- Este entrega se realizo en entregas por commits separados debido al tiempo.
 - Puntos faltantes:
   - la vista de detalles completa, se creo el componente pero no esta maquetada ni nada.
-  - utilizacion de estados: se iba a utiliar useContext ya que era un ejemplo por asi decirlo pequeño.
+  - utilizacion de estados: se utilizo useContext ya que era un ejemplo por asi decirlo pequeño.
   - filtrado correcto de autores: Nunca habia usado reac-table, por lo que me llevo bastante tiempo,
     encontrar la version correcta de la libreria compatible con mi version de react(18)
     y aprender a usarlo mas o menos, esto tambie perdjudico bastante la entrega final por
     que sin querer le dedique mas del tiempo debido.
   - vista de favoritos: se maqueto pero falto la utilización de los estado para rellenar con info real.
   - validacion de formulario: se utilizo formkit en el formulario pero falto realizar validacion por tiempo.
-- Se ha tenido que desactivar la opcion typo any del eslint por tiempo(falta de dominio de las propiedades react-table)
+- Se desactivo la opcion typo any del eslint en react-table(solo por tiempo);
 - Pruebas unitarias y StoryBook : Por falta de tiempo no alcance a hacer las pruebas unitarias y StoryBook, normalmente
   antes de enviar cambios hago las pruebas unitarias y demas, asi me aseguro de que todo funcione(ademas de las pruebas en mi entorno);
 
@@ -63,20 +63,6 @@ Para no hacer un texto muy denso dejo una lista del por que de cada cosa que use
 - Eslint => estoy bastante adecuado a usarlo asi que no hubo mucho problema(aun que aveces se siente algo pesado usarlo
 es mucho mejor para tener un codigo mas ordenado y correcto.)
 
-Hay alguna mejora que dejaste pendiente de hacer en su envío?
-
-Obviamente, puse un punto destacando lo faltante que fue por temas de tiempo,
-para mi caso puntual no pude usar mas alla de 3 dias, estos los use en invesitagacion y correccion de librerias
-basicamente y por esto no pude comletar todo lo solicitado, pero continuare haciendola durante la proxima semana, 
-por si les interesa ver un antes y despues.
-
-¿Qué harías de manera diferente si se le asignara más tiempo?
-creo que haria lo mismo a excepcion de darle tanta enfasis a la configuracion de react-table ya que podria haber tenido 
-mas puntos completados y asi tener mas posibilidades. Lo mas dificil de la tabla fue los filtros y controlar los errores
-que iba arrojando eslint por cada cambio. 
-PS: Auque no tenia en mente realizar una prueba tecnia de un momento a otro, siempre me gusta enfrentarme a nuevos
-desafios, por lo que fue basatante entretenido, me gustaria recibir algun feedback de igual forma si fuera posible ya que
-como comente con anterioridad seguire subiendo contenido a esta rama con las actualizaciones pendientes.
 
 ## storybook
 
