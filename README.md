@@ -30,17 +30,14 @@ If you are developing a production application, we recommend updating the config
 
 - Este entrega se realizo en entregas por commits separados debido al tiempo.
 - Puntos faltantes:
-  - la vista de detalles completa, se creo el componente pero no esta maquetada ni nada.
-  - utilizacion de estados: se utilizo useContext ya que era un ejemplo por asi decirlo pequeño.
-  - filtrado correcto de autores: Nunca habia usado reac-table, por lo que me llevo bastante tiempo,
-    encontrar la version correcta de la libreria compatible con mi version de react(18)
-    y aprender a usarlo mas o menos, esto tambie perdjudico bastante la entrega final por
-    que sin querer le dedique mas del tiempo debido.
-  - vista de favoritos: se maqueto pero falto la utilización de los estado para rellenar con info real.
-  - validacion de formulario: se utilizo formkit en el formulario pero falto realizar validacion por tiempo.
+  - la vista de detalles completa, se creo el componente pero no esta maquetada ni nada.(pendiente hasta el momento)
+  - utilizacion de estados: se utilizo useContext ya que era un ejemplo por asi decirlo pequeño.(punto completado)
+  - filtrado correcto de autores: conflictos con versiones de reac-table, por lo que se busco la version correcta de la libreria compatible con mi version de react(18).(punto completado)
+  - vista de favoritos: se maqueto pero falto la utilización de los estado para rellenar con info real.(punto completado)
+  - validacion de formulario: se utilizo formkit en el formulario pero falto realizar validacion por tiempo.(punto completado)
 - Se desactivo la opcion typo any del eslint en react-table(solo por tiempo);
 - Pruebas unitarias y StoryBook : Por falta de tiempo no alcance a hacer las pruebas unitarias y StoryBook, normalmente
-  antes de enviar cambios hago las pruebas unitarias y demas, asi me aseguro de que todo funcione(ademas de las pruebas en mi entorno);
+  antes de enviar cambios hago las pruebas unitarias y demas, asi me aseguro de que todo funcione(pendiente hasta el momento);
 
 ## Opciones Tecnicas y arquitectonicas
 
@@ -52,8 +49,7 @@ Para no hacer un texto muy denso dejo una lista del por que de cada cosa que use
 - Typescript => Se utilizo ts en ves de js(podria hacerlo con js de igualforma, tengo bastante buen dominio de este de igual forma),
   ya que al utilizar angular la mayor parte del tiempo me acostumbre muchisimo a utilizar typescript y al tener la opcion de
   utilizarlo era mas comodo para mi, permitiendo definir interfaces y demas para especificar que requeria.
-- Headlessui => No se alacanzo a materializar su uso por tiempo, pero se esperaba utilizar efectos, autocompletador
-  del combobox.
+- Headlessui => No se alacanzo a materializar su uso por tiempo, pero se esperaba utilizar efectos y modal.
 - Heroicons => Instalado para usarlo mas adelante junto a tailwind queda bastante bonito.
 - @tanstack/match-sorter-utils y @tanstack/react-table => Instalados para poder trabajar con react-table y sus filtros,
   se utilizo la version 8 de estas porque era la compatible con la version de React 18, probe con versiones anterioes y
